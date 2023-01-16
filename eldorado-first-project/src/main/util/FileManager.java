@@ -21,10 +21,10 @@ public class FileManager {
     static final String PATH = "src/resources/";
 
 
-    public void writeFile(List<Invoice> invoices, String fileName) {
+    public void writeFile(List<String> companies, String fileName) {
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(String.format("%s/%s.txt", PATH, fileName), true))) {
-            for (Invoice invoice : invoices) {
-                bufferedWriter.append(invoice.toString()).append("\n");
+            for (String company : companies) {
+                bufferedWriter.append(company).append("\n");
             }
         } catch (IOException e) {
             LOGGER.log(Level.SEVERE, e.getMessage());
