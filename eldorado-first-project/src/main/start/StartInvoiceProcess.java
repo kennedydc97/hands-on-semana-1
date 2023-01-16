@@ -26,15 +26,6 @@ public class StartInvoiceProcess {
 
         Map<String, List<Billing>> billingMap = billingList.stream().collect(groupingBy(Billing::getCompany));
 
-//        System.out.println(invoiceMap.get("f9af79a2edb58bc6327ea8bd00e21fb8ca5b55a56077f5664480a23cdd2097e7"));
-//        System.out.println(billingMap.get("f9af79a2edb58bc6327ea8bd00e21fb8ca5b55a56077f5664480a23cdd2097e7"));
-
-//        Empresa em conformidades: aquelas cujo valores das notas mensais são
-//        iguais aos valores faturados.
-//
-//        Empresa em não conformidades: aquelas cujo valores das notas mensais não
-//        são iguais aos valores faturados.
-
         List<String> compliantCompanies = new ArrayList<>();
         List<String> nonCompliantCompanies = new ArrayList<>();
 
