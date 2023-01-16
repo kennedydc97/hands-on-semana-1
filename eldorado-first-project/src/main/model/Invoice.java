@@ -74,4 +74,16 @@ public class Invoice {
     public void setIssueDate(String issueDate) {
         this.issueDate = issueDate;
     }
+
+    @Override
+    public String toString() {
+        return "Invoice{" +
+                "id=" + id +
+                ", company='" + company + '\'' +
+                ", month=" + month +
+                ", year=" + year +
+                ", value=" + value +
+                ", issueDate='" + issueDate + '\'' +
+                '}';
+    }
 }

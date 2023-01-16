@@ -14,7 +14,7 @@ public class Main {
 
             StartInvoiceProcess startInvoiceProcess = new StartInvoiceProcess();
 
-            startInvoiceProcess.startInvoiceProcess();
+            startInvoiceProcess.startFilesProcess();
 
         } catch (Exception e) {
             LOGGER.log(Level.SEVERE, String.format("%s%s", "Error: ", e.getMessage()));
